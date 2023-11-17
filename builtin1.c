@@ -101,7 +101,7 @@ int _myalias(info_t *info)
 	}
 	for (g = 1; info->argv[g]; g++)
 	{
-		p = _strchr(info->argv[i], '=');
+		p = _strchr(info->argv[g], '=');
 		if (p)
 			set_alias(info, info->argv[g]);
 		else
